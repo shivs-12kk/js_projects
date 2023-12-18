@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: url("snk.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  min-height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont {
+  opacity: 0.9;
+  /* margin-left: 45%; */
+  width: 130vb;
+  height: 90vh;
+  border-radius: 5px;
+  border: 2px solid purple;
+  background: linear-gradient(rgb(215, 188, 186), rgb(177, 160, 190));
+  display: grid;
+  grid-template-rows: repeat(28, 1fr);
+  grid-template-columns: repeat(28, 1fr);
+}
+
+.head {
+    background-image: linear-gradient(315deg, rgb(236, 124, 63) 0%, #381402 74%);
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: black;
+    border-style:solid;
+    animation: shine 2s infinite alternate;
+}
+.snk {
+    background-image: linear-gradient(315deg, rgb(183, 183, 3)0% , rgb(39, 53, 2) 74%);
+    border-radius: 15px;
+    border-color: black;
+    border-style:solid;
+    border-width: 1px;
+
+}
+.food {
+background-color: #89d8d3;
+  background-image: linear-gradient( #d4028e , #3a0110 );
+    border: none;
+    border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%  ; /* Adjust border-radius for pear shape */
+    z-index: 1;
+    animation: shine 2s infinite alternate;
+      /* border-radius: 5px; */
+}
+
+  @keyframes shine {
+    0% {
+      box-shadow: 0 0 10px rgba(227, 62, 62, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(214, 64, 64, 0.8), 0 0 30px rgba(163, 6, 6, 0.5);
+    }
+  }
+  
+.food {
+  transition: all 0.1s ease-in-out; /* Adjust the duration if needed */
+}
+.grow {
+    transform: scale(1.9); /* Adjust the scale factor for the increased size */
+  }
