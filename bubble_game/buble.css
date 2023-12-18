@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+height: 100%;
+width: 100%;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-color:lightgreen;
+}
+.man{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    min-height: 80vh;
+   width: 140vb;
+    border-radius: 2%;
+    background-color: white;
+    overflow-y:auto;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    width: 140vb;
+  background-color: rgb(68, 104, 68);
+  padding: 0px 20vb 0px;
+}
+.elem{
+   padding-top: 19px;
+   display: flex;
+   gap: 10px;
+   color: wheat;
+}
+.box{
+    width: 6vb;
+    height: 4vh;
+    background-color: rgb(212, 222, 232);
+    border-radius: 5%;
+    border-width: 20px;
+    color: rgb(2, 87, 22);
+    padding: 3px 9px ;
+    font-size: 18px;
+    font-weight: 10%;
+}
+.bubt{
+    width: 140vb;
+    height: 70vh;
+    padding: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 40px;
+    
+}
+.bubl{
+    width: 7vb;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(90, 147, 90);
+    border-width: 10px;
+    
+}
+.bubl:hover{
+    cursor: pointer;
+    background-color: rgb(112, 194, 166);
+}
+.styled-text {
+    font-size: 84px;
+    font-weight: bold;
+    color: rgb(73, 73, 150);
+    padding-top: 10%;
+    
+}
+
+#scoredis {
+    position: absolute;
+    top: 55%;
+    left:50%;
+    font-size: 54px;
+    background-color: rgb(174, 238, 238);
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0;
+    /* animation: scoreAnimation 3s ease-in-out; */
+}
+
+
