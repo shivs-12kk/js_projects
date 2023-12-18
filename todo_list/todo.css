@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+height: 100%;
+width: 100%;
+display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    text-align: center;
+    background: linear-gradient(15deg,#1e5dd3,#4e085f);
+}
+.card{
+    overflow: hidden;
+    background-color: rgb(238, 236, 245);
+    width: 40%;
+    min-height: 65%;
+    padding: 2%;
+    border-radius: 6px;
+    overflow: auto;
+    word-wrap: break-word;
+
+}
+#hed{
+    font-size: 19px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   margin-right: 59%;
+}
+button{
+    margin-left: 25%;
+    background-color: rgb(220, 127, 46);
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 25px 9px;
+}
+button:hover{
+    background-color: rgb(189, 91, 4);
+    color: aliceblue;
+    
+}
+.search{
+    background-color: antiquewhite;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    width: 120%;
+    width:100%;
+    margin-top: 6%;
+}
+#input{
+    flex: 1;
+    margin-top: 1%;
+
+outline: none;
+padding-left: 20%;
+width: 200%;
+padding: 4px;
+border: none;
+background-color: antiquewhite;
+
+}
+#input:focus{
+    caret-color: #bd4917;
+}
+ul li{
+    list-style: none;
+     cursor: pointer;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+position: relative;
+top:20px;
+/* right: 10px; */
+text-align: left;
+user-select: none;
+}
+ul li::before{
+    content: ''; 
+    width: 30px;
+    height: 30px;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 5px; 
+    border-radius: 5%;
+}
+ul li.checked{
+   text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+
+#item span{
+    color: #e0190b;
+    font-weight: bold;
+   float: right;
+   padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+#item span:hover{
+    background-color:rgb(224, 218, 230);
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
